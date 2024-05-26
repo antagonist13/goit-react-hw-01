@@ -1,7 +1,18 @@
+import Profile from "../Profile/Profile";
 import css from "./App.module.css";
+import UserData from "/src/userData.json"
 
 export default function App() {
-    return <div className={css.class}>
-        <h1>Hello, world</h1>
+    return <div >
+        <h1 className={css.header}>React Homework 1</h1>
+        <h2>Task 1</h2>
+        <Profile
+        name={UserData.username}
+        tag={UserData.tag}
+        location={UserData.location}
+        image={UserData.avatar}
+        stats={UserData.stats}
+        />
+        <h2>Task 2</h2>
     </div>
 }
