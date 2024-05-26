@@ -1,6 +1,8 @@
-import Profile from "../Profile/Profile";
-import css from "./App.module.css";
 import UserData from "/src/userData.json"
+import Profile from "../Profile/Profile";
+import FriendList from "../FriendList/FriendList.jsx";
+import css from "./App.module.css";
+
 
 export default function App() {
     return <div >
@@ -14,5 +16,6 @@ export default function App() {
         stats={UserData.stats}
         />
         <h2>Task 2</h2>
+        <FriendList />
     </div>
 }
