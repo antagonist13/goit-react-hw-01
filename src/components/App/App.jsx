@@ -1,7 +1,10 @@
 import UserData from "/src/userData.json"
 import friends from "/src/friends.json";
+import transactions from "/src/transactions.json"
+
 import Profile from "../Profile/Profile";
 import FriendList from "../FriendList/FriendList.jsx";
+import TransactionHistory from "../TransactionHistory/TransactionHistory.jsx"
 import css from "./App.module.css";
 
 export default function App() {
@@ -17,5 +20,7 @@ export default function App() {
             />
         <h2>Task 2</h2>
             <FriendList friends={friends} />
+        <h2>Task 3</h2>
+            <TransactionHistory items={transactions} />
     </div>
 }
